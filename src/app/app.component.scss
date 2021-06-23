@@ -1,0 +1,25 @@
+.logo {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+nz-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nz-content {
+  padding: 0 50px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.inner-content {
+  background: #fff;
+  padding: 24px;
+  min-height: calc(100vh - 134px);
+}

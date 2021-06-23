@@ -1,0 +1,14 @@
+<nz-card nzTitle="{{ roleDate.Name }}">
+  <nz-list nzItemLayout="horizontal">
+    <nz-list-item *ngFor="let user of users">
+      <nz-list-item-meta
+        nzAvatar="./assets/avator.png"
+        nzDescription="{{ user.Name }}"
+      >
+        <nz-list-item-meta-title>
+          <a href="#">{{ user.Name }}</a>
+        </nz-list-item-meta-title>
+      </nz-list-item-meta>
+    </nz-list-item>
+  </nz-list>
+</nz-card>
