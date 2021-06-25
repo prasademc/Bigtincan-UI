@@ -17,6 +17,7 @@ import { NzTreeModule } from 'ng-zorro-antd/tree';
 import { NzTreeViewModule } from 'ng-zorro-antd/tree-view';
 import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
+import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
 
 @NgModule({
   exports: [
@@ -36,7 +37,8 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
     NzTreeModule,
     NzTreeViewModule,
     NzTreeSelectModule,
-    NzTypographyModule
+    NzTypographyModule,
+    NzAutocompleteModule
   ]
 })
 export class NgZorroAntdModule {

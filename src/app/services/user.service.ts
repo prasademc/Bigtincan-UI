@@ -37,7 +37,7 @@ export class UserService {
    * @returns
    */
   getUserById(id: number): Observable<User> {
-    let user: User = this.allUsers.find(user => user.Id === id) || { Id: 0, Name: '', Role: 0 };
+    let user: User = this.allUsers.find(user => user.Id === id) || { Id: 0, Name: '', Role: 0, Child: [] };
     return of(user);
   }
 }

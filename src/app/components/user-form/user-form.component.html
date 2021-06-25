@@ -1,0 +1,22 @@
+<div nz-row [nzGutter]="10">
+  <div nz-col [nzSpan]="12">
+    <div class="user-nput">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <input
+          #userInput
+          placeholder="Enter user name"
+          nz-input
+          [(ngModel)]="inputValue"
+          (ngModelChange)="onChange($event)"
+          [nzAutocomplete]="auto"
+          formControlName="userSelected"
+        />
+        <nz-autocomplete
+          [nzDataSource]="filteredOptions"
+          #auto
+        ></nz-autocomplete>
+        <button type="submit" [disabled]="!userForm.valid" nz-button nzType="primary">Show User Hierarchy</button>
+      </form>
+    </div>
+  </div>
+</div>

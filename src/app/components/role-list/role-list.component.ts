@@ -13,7 +13,9 @@ export class RoleListComponent implements OnInit {
 
   roles: Role[] = [];
 
-  constructor(private roleService: RoleService) { }
+  constructor(
+    private roleService: RoleService
+  ) { }
 
   ngOnInit(): void {
     this.roleService.getRoles().subscribe(data => {
